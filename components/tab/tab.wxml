@@ -1,0 +1,10 @@
+<view class="ptarbar">
+    <view class="tarvalue {{item.isactive? 'active':''}}" wx:for="{{tarbar}}" 
+    wx:key="id" data-index="{{index}}" bindtap="handTab">
+        {{item.value}} 
+    </view> 
+</view>
+<view>
+    <slot ></slot>
+</view>
+  

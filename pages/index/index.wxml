@@ -1,0 +1,29 @@
+<view>
+  <searchInput></searchInput>
+</view>
+<!-- 播图轮 -->
+<view>
+  <swiper list="{{swiper}}" />
+</view>
+<!-- 导航菜单 -->
+<view class="viewRecommed">
+  <navigator class="navRecommed" wx:for="{{recommed}}" wx:key="item.name">
+    <image class="imgRecommed" src="{{item.image_src}}" />
+  </navigator>
+</view>
+<!-- 楼层数据 -->
+<view class="indexFloor">
+  <view class="disFloor"  wx:for="{{floor}}" wx:for-item="item1"  wx:key="index">
+  <!-- 图片标题 -->
+  <view class="vieFloor" >
+    <image mode="widthFix" src="{{item1.floor_title.image_src}}" wx:key="item1.floor_title.name" />
+  </view>
+  <!-- 图片内容 -->
+  <view class="navFloor">
+    <navigator wx:for="{{item1.product_list}}"  wx:for-item="item2" wx:for-index="index2"  :key="index">
+      <image  mode="{{index2===0?'widthFix':' '}}" src="{{item2.image_src}}" wx:key="index" />
+    </navigator>
+  </view>
+</view>
+</view>
+  

@@ -1,0 +1,32 @@
+<view>
+    <searchInput />
+</view>
+<view>
+    <tab tarbar="{{tarbar}}" bindtabtrigger="handtabtrigger">
+        <block wx:if="{{tarbar[0].isactive}}">
+            <view class="firtarbar" wx:for="{{goods}}" wx:key="index">
+                <navigator url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}" class="navbarter">
+                    <!-- 左边图片 -->
+                <view class="lefttarbar">
+                    <image src="{{item.goods_small_logo?item.goods_small_logo:'http://image4.suning.cn/uimg/b2c/newcatentries/0000000000-000000000775604287_1_400x400.jpg'}}" mode="widthFix" />
+                </view>
+                <!-- 右侧标题与价格 -->
+                <view class="righttarbar">
+                    <!-- 标题 -->
+                    <text class="tarbarname">{{item.goods_name}}</text>
+                    <!-- 价格 -->
+                    <view class="tarbarpric">￥{{item.goods_price}}</view>
+                </view>
+                </navigator>
+            </view>
+
+         
+
+             
+        </block>
+
+
+        <block wx:elif="{{tarbar[1].isactive}}">1</block>
+        <block wx:elif="{{tarbar[2].isactive}}">2</block>
+    </tab>
+</view>

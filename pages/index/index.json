@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+  "searchInput":"../../components/searchinput/searchinput",
+  "swiper":"../../components/swiper/swiper"
+  },
+  "navigationBarTitleText": "拼西西" 
+}

@@ -1,0 +1,14 @@
+<view>
+    <button   class="btn" plain type="primary" open-type="getUserInfo" bindgetuserinfo="bindget">
+        登录
+    </button>
+    <view class="disap">
+        <view  class="btnimg">
+            <image src="{{userinfo.avatarUrl}}" alt="" />
+        </view>
+        <view class="btnimgs">
+            <image src="{{userinfo.avatarUrl}}" alt="" />
+            <view class="disaptext">{{userinfo.nickName}}</view>
+        </view>
+    </view>
+</view>

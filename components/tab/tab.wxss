@@ -1,0 +1,18 @@
+/* components/tab/tab.wxss */
+
+.ptarbar {
+    display: flex;
+    text-align: center;
+    height: 80rpx;
+    align-items: center;
+}
+
+.tarvalue {
+    flex: 1;
+    padding-bottom: 12rpx;
+}
+
+.active {
+    color: #eb4450;
+    border-bottom: 4rpx solid #eb4450;
+}

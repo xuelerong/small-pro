@@ -1,0 +1,15 @@
+/* components/Searchinput/Searchinput.wxss */
+.pxx_navigator{
+    height: 60rpx;
+    background-color:var(--themColor);
+    padding: 10rpx;
+}
+navigator{
+    height: 60rpx;
+    background-color: white;
+    display: flex;
+    line-height: 60rpx;
+    justify-content: center;
+    border-radius: 8rpx;
+    color: #666666;
+}

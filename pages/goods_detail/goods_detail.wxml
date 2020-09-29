@@ -1,0 +1,38 @@
+<view class="detailMessage">
+    <swiper class="swiperhit" indicator-dots autoplay interval="2000" circular indicator-active-color="#ff5777">
+        <navigator url=" ">
+            <swiper-item bindtap="handTabImg" data-url="{{item.pics_mid}}" class="swiperMig" wx:for="{{detailMes.pics}}" wx:key='index'>
+                <image mode="widthFix" src="{{item.pics_mid}}" />
+            </swiper-item>
+        </navigator>
+    </swiper>
+</view>
+<!-- 商品价格 -->
+<view class="prcie">￥{{detailMes.goods_price}}</view>
+<view class="detaltstyle">
+    <view class="goodsname">{{detailMes.goods_name}}</view>
+    <view class="detailshoucang">
+        <view class="iconfont">@^@</view>
+        <view class="font">收藏</view>
+    </view>
+</view>
+<view class="fontmini">图文详情</view>
+<rich-text nodes="{{detailMes.goods_introduce}}"></rich-text>
+<view class="shopping">
+    <view class="shoppingone">
+        <view>@@</view>
+        <view>客服</view>
+    </view>
+    <view class="shoppingtwo">
+        <view>@@</view>
+        <view>分享</view>
+    </view>
+    <navigator open-type="switchTab" url = "/pages/cart/cart" class="shoppingthree">
+        <view>^&^</view>
+        <view>购物车</view>
+    </navigator>
+    <view class="goshopping">
+        <view class="shoppingfour"data-index="{{index}}" bindtap="catemessage">加入购物车</view>
+        <view class="shoppingfive">立即购买</view>
+    </view>
+</view>

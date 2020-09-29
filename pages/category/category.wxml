@@ -1,0 +1,27 @@
+<view class="category">
+    <!-- 搜索框 -->
+    <searchInput />
+    <view class="categoryMessage">
+        <!-- 左边栏数据 -->
+        <scroll-view scroll-y class="leftMessage">
+            <view bindtap="handTab" data-index="{{index}}" class="scrollLeft {{index === currenIndex ? 'active' :''}}" wx:for="{{categoryLeft}}" wx:key="index">
+                {{item}}
+            </view>
+        </scroll-view>
+        <!-- 右边栏数据 -->
+        <scroll-view scroll-top="{{scrollTop}}" scroll-y class="rightMessage">
+            <view wx:for="{{categoryRight}}" wx:key="cat_id" wx:for-item="item1">
+                <!-- 右侧栏标题 -->
+                <view class="rightTop">/{{item1.cat_name}}/</view>
+                <!-- 右侧栏标题对应的主体 -->
+                <view class="rightBot">
+                    <navigator wx:for="{{item1.children}}" wx:key="cat_id" wx:for-item="item2"
+                    url="/pages/goods_list/goods_list?cid={{item2.cat_id}}">
+                        <image src="{{item2.cat_icon}}" mode="widthFix"/>
+                        <text class="textname">{{item2.cat_name}}</text>
+                    </navigator>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

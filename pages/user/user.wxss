@@ -1,0 +1,37 @@
+/* pages/user/user.wxss */
+
+.btn {
+    width: 70%;
+    margin-top: 30rpx;
+}
+
+.disap {
+    position: relative;
+}
+
+.btnimg image {
+    width: 100%;
+    filter: blur(5px);
+}
+
+.btnimgs image {
+    width: 180rpx;
+    height: 180rpx;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.disaptext {
+    position: absolute;
+    margin-top: -18%;
+    color: aquamarine;
+    font-size: 40rpx;
+    font-weight: bolder;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}

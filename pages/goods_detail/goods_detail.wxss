@@ -1,0 +1,126 @@
+/* pages/goods_detail/goods_detail.wxss */
+
+page {
+    padding-bottom: 86rpx;
+}
+
+.swiperhit {
+    height: 500rpx;
+    display: flex;
+    text-align: center;
+}
+
+.swiperMig image {
+    width: 70%;
+}
+
+.prcie {
+    padding-left: 30rpx;
+    color: #eb4450;
+    font-size: 30rpx;
+    font-weight: 600;
+}
+
+.detaltstyle {
+    display: flex;
+    padding-bottom: 14rpx;
+    border-bottom: 16rpx solid #edeff1;
+}
+
+.goodsname {
+    padding: 0 20rpx;
+    flex: 4;
+    /*  //将对象作为弹性伸缩盒子模型显示 */
+    display: -webkit-box;
+    /* /从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式） */
+    -webkit-box-orient: vertical;
+    /* 这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数 */
+    -webkit-line-clamp: 2;
+    /* //超出的文本隐藏 */
+    overflow: hidden;
+    /* 溢出用省略号显示 */
+    text-overflow: ellipsis;
+}
+
+.detailshoucang {
+    border-left: 2rpx solid #333333;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fontmini {
+    font-size: 40rpx;
+    color: red;
+    height: 70rpx;
+    line-height: 70rpx;
+    font-weight: bolder;
+    padding-left: 10rpx;
+    padding-bottom: 10rpx;
+}
+
+.shopping {
+    box-shadow: 3rpx 4rpx 10px;
+    border-top: 3rpx solid #333333;
+    display: flex;
+    height: 90rpx;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fcfffc;
+}
+
+.shoppingone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #333333;
+    font-size: 24rpx;
+}
+
+.shoppingtwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-size: 24rpx;
+    color: #333333;
+}
+
+.shoppingthree {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-size: 24rpx;
+    color: #333333;
+}
+
+.goshopping {
+    flex: 3;
+    display: flex;
+    text-align: center;
+    line-height: 90rpx;
+}
+
+.shoppingfour {
+    flex: 1;
+    background-color: #fea400;
+    color: #edeff1;
+    font-weight: 700;
+}
+
+.shoppingfive {
+    flex: 1;
+    background-color: #ea444e;
+    color: #edeff1;
+    font-weight: 700;
+}

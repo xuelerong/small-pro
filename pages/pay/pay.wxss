@@ -1,0 +1,158 @@
+/* pages/cart/cart.wxss */
+
+page {
+    padding-bottom: 80px;
+}
+
+.cart_btn {
+    margin-top: 20rpx;
+}
+
+.cart_btn button {
+    border-radius: 20rpx;
+}
+
+.userhouse {
+    padding: 20rpx 0 20rpx 16rpx;
+    display: flex;
+}
+
+.cartLeft {
+    flex: 5;
+}
+
+.cartRight {
+    flex: 2;
+}
+
+.textcart {
+    margin-top: 10rpx;
+    border-bottom: 1px solid #d74c42;
+    border-top: 1px solid #d74c42;
+    padding: 20rpx 0 20rpx 20rpx;
+    font-size: 50rrpx;
+    color: #d74c42;
+    font-weight: bolder;
+}
+
+.cart_goods {
+    display: flex;
+    position: relative;
+    padding: 20rpx 0;
+    border-bottom: 1rpx solid #333333;
+}
+
+.cartleft_list {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartcenter_list {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20rpx;
+}
+
+.cartright_list {
+    flex: 4;
+}
+
+.cartRighttext {
+    /* //将对象作为弹性伸缩盒子模型显示 */
+    display: -webkit-box;
+    /* /从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式） */
+    -webkit-box-orient: vertical;
+    /* 这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数 */
+    -webkit-line-clamp: 2;
+    /* //超出的文本隐藏 */
+    overflow: hidden;
+    /* 溢出用省略号显示 */
+    text-overflow: ellipsis;
+    padding-top: 20rpx;
+}
+
+.cartRightcontent {
+    display: flex;
+    align-items: flex-end;
+}
+
+.cartRightmoney {
+    position: absolute;
+    bottom: 20rpx;
+    left: 334rpx;
+    font-weight: bolder;
+    color: #d74c42;
+}
+
+.checkbtnleft {
+    position: absolute;
+    bottom: 20rpx;
+    right: 120rpx;
+    padding: 0 10rpx;
+    border: 1rpx solid #333333;
+}
+
+.checkbtncenter {
+    position: absolute;
+    bottom: 20rpx;
+    right: 74rpx;
+}
+
+.checkbtnright {
+    padding: 0 10rpx;
+    border: 1rpx solid #333333;
+    position: absolute;
+    bottom: 20rpx;
+    right: 14rpx;
+}
+
+.carttarbar {
+    box-shadow: 2rpx 2rpx 5rpx #333333;
+    position: fixed;
+    height: 80rpx;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: #fcfffc;
+}
+
+.carttarbarleft {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 20rpx;
+}
+
+.carttarbarcenter {
+    flex: 4;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.carttarbarcentermini {
+    padding-top: 6rpx;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10rpx;
+}
+
+.boock {
+    color: #e8454e;
+    font-weight: 600;
+}
+
+.carttarbarright {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8454e;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 40rpx;
+}

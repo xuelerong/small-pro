@@ -1,0 +1,59 @@
+/* pages/category/category.wxss */
+
+page {
+    height: 100%;
+}
+
+.category {
+    height: 100%;
+}
+
+.categoryMessage {
+    display: flex;
+    height: calc( 100vh - 80rpx);
+}
+
+.leftMessage {
+    flex: 2;
+}
+
+.scrollLeft {
+    display: flex;
+    height: 80rpx;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightMessage {
+    flex: 4;
+}
+
+.rightMessage .rightTop {
+    display: flex;
+    justify-content: center;
+    height: 80rpx;
+    align-items: center;
+}
+
+.rightMessage .rightBot {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rightMessage .rightBot navigator {
+    width: 33%;
+    height: 100%;
+    position: relative;
+    padding-bottom: 60rpx;
+}
+
+.rightMessage .rightBot .textname {
+    position: absolute;
+    bottom: 8rpx;
+}
+
+.active {
+    color: #eb4450;
+    font-weight: 600;
+    border-left: 5rpx solid #eb4450;
+}

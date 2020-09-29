@@ -1,0 +1,51 @@
+<view>
+   
+    <view   class="userhouse">
+        <!-- 收获地址左边 -->
+        <view class="cartLeft">
+            <view class="lefthouse">{{house.userName}}</view>
+            <!-- 地址 -->
+            <view class="righthouse">
+                {{house.provinceName+house.cityName+house.countyName+house.detailInfo}}
+            </view>
+        </view>
+        <!-- 收货地址右边 -->
+        <view class="cartRight">{{house.telNumber}}</view>
+    </view>
+</view>
+<!-- 购物车 -->
+<view>
+    <view class="textcart">购物车</view>
+    <view  class="cart_goods" wx:for="{{cartuser}}" wx:key="index" wx:for-item="item1">
+     
+        <!-- 商品中间 -->
+        <view class="cartcenter_list">
+            <image src="{{item1.goods_small_logo}}" mode="widthFix" />
+        </view>
+        <!-- 商品右边 -->
+        <view class="cartright_list">
+            <!-- 商品标题 -->
+            <view class="cartRighttext">{{item1.goods_name}}</view>
+            <!-- 价格和数量 -->
+            <view class="cartRightcontent">
+                <view class="cartRightmoney">￥{{item1.goods_price}}</view>
+                <!-- 复选框左右两个 -->
+                <view class="cartRightbtn">
+                  
+                    <view class="checkbtncenter">X{{item1.num}}</view>
+                  
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="carttarbar">
+        <view class="carttarbarcenter">
+            合计 ：
+            <view class="carttarbarcentermini">
+                <view class="boock"> ${{totleprices}}</view>
+                <view>包含运费</view>
+            </view>
+        </view>
+        <view class="carttarbarright" bindtap="hahah">支付({{totlenumber}})</view>
+    </view>
+</view>
